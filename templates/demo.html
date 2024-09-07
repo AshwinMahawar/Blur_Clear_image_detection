@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static\css\contact.css">
+</head>
+<body>
+    <div class='container'>
+            <form action="/demo" method="post" enctype="multipart/form-data">
+                <center><h1>Form</h1></center>
+                <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
+                <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
+                <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+                <textarea rows="2" cols="60" name="message" placeholder="Enter text" autocomplete="off" required></textarea>
+                
+
+                <input class="form-control" type="file" name="imagefiledemo"  >
+
+                <h5 id ="pred" style= "color:black">
+                    <span style="font-weight: bold;">{{ result }}
+                  </span>
+                  </h5>
+
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <ul>
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endwith %}
+
+                
+                
+
+                <button type="submit" value="Predict Image">submit</button>
+                <a href="/">Back to homepage</a>
+            </form>
+    </div>    
+</body>
+</html>

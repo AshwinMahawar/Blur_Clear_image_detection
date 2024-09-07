@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IngenioScan</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="static/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="static/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="static/img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="static/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+<link rel="stylesheet" type="text/css"  href="static/css/style.css">
+
+<link rel="stylesheet" type="text/css" href="static/css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="static/css/nivo-lightbox/default.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+
+</head>
+<body id="page-top"  data-target=".navbar-fixed-top">
+
+<!-- Navigation ==========================================-->
+
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <!--<a class="navbar-brand page-scroll" href="/">IngenioScan</a> </div>-->
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login" class="another-page">login</a></li>
+        <li><a href="about" class="another-page">About</a></li>
+        <li><a href="contact" class="another-page">Contact us</a></li>
+        <li><a href="demo" class="another-page">demo application</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+</nav> 
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="intro-text">
+            <h1>IngenioScan</h1>
+            <p>Blur detection website</p>
+            <a href="upload" class="btn btn-custom btn-lg page-scroll">Upload Document</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About Section 
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 ">
+        <div class="about-img"><img src="static/img/about.gif" class="img-responsive" alt=""></div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <h2>Our scanner model</h2>
+          <hr>
+          <p>Our cutting-edge scanning and verifying website revolutionizes document management. Seamlessly scan physical documents into digital formats with precision. Our advanced verification algorithms ensure data accuracy. Protect sensitive information with robust encryption. Streamline your workflow and access digitized content securely. Experience efficiency and reliability like never before.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<!-- features 
+<div id="features">
+  <div class="text-center">
+    <h2>features</h2>
+    <p>High-res scanning, data accuracy checks, robust security, and streamlined workflow optimization make our website your top choice for document management. </p>
+  </div>
+  <div class="container">		
+    <div class="col-md-4">
+      <figure class="effect-marley">
+        <img src="static/img/accurate.jpg" alt="" class="img-responsive"/>
+        <figcaption>
+          <h4>Accurate Scanning </h4>
+          <p>High-quality document scanning with precision</p>				
+        </figcaption>			
+      </figure>
+    </div>
+    <div class="col-md-4">
+      <figure class="effect-marley">
+        <img src="static/img/verify.jpg" alt="" class="img-responsive"/>
+        <figcaption>
+          <h4>Data Verification</h4>
+          <p>Advanced algorithms ensure data accuracy.</p>
+        </figcaption>			
+      </figure>
+    </div>
+    <div class="col-md-4">
+      <figure class="effect-marley">
+        <img src="static/img/streamline.jpg" alt="" class="img-responsive"/>
+        <figcaption>
+          <h4>Streamlined Workflow</h4>
+          <p>Efficient access to digitized content, enhancing productivity.</p>
+        </figcaption>			
+      </figure>
+    </div>
+  </div>-->
+<div class="container">
+  <div class="chatbox">
+      <div class="chatbox__support">
+          <div class="chatbox__header">
+              <div class="chatbox__image--header">
+                  <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+              </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Albert. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+      <div class="chatbox__button">
+        <button><img src="{{ url_for('static', filename='img/chatbox-icon.svg') }}" /></button>
+      </div>
+  </div>
+</div>
+
+<!-- Contact Section 
+
+  <div id="contact" class="text-center">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>suggestion</h2>
+        <hr>
+        <p>have any suggestion for us? drop it right below</p>
+      </div>
+    <div class="col-md-10 col-md-offset-1">
+      <form name="sentMessage" id="contactForm" novalidate>
+        <div class="form-group">
+          <input type="email" name="email" rows="4" class="form-control" placeholder="Email Address" autocomplete="off" required>
+          <textarea name="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
+      </form>
+    </div>
+   </div>
+ </div>-->
+
+<!--<div id="footer">
+  <div class="container-fluid text-center copyrights">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="social">
+       <!-- <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<script>
+  $SCRIPT_ROOT = {{ request.script_root|tojson }};
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/chat.js') }}"></script>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
